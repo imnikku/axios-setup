@@ -36,7 +36,7 @@ axiosInstance.interceptors.response.use(
     return response;
   },
   (error) => {
-    console.log("esl", error);
+   
     if (error.response.status === 401) {
       localStorage.clear();
     }
